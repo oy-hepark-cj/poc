@@ -3,6 +3,9 @@ import Head from 'next/head';
 import './styles.css';
 import { BrowserRouter } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
@@ -17,14 +20,16 @@ function CustomApp({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <BrowserRouter>
-    <Head>
-      <title>모노레포 PoC</title>
-    </Head>
-    <main className="app">
-      <Component {...pageProps} />
-    </main>
-  </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Head>
+          <title>모노레포 PoC</title>
+        </Head>
+        <main className="app">
+          <Component {...pageProps} />
+        </main>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 
