@@ -46,6 +46,7 @@
   "workspaces": [
     "apps/*",
     "libs/shared/*",
-    "libs/domain/product"
+    "libs/domain/product",
+    "libs/domain/wellness"
   ]
 }
