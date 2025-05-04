@@ -1,2 +1,21 @@
-.page {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: 1rem;
+
+  .link {
+    flex: 1;
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding: .5rem;
+    &:hover {
+      img {
+        opacity: .7;
+      }
+      font-weight: bold;
+    }
+  }
 }
+
