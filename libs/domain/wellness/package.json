@@ -1,0 +1,20 @@
+{
+  "name": "@domain/wellness",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@tanstack/react-query": "^4.36.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "typescript": "^5.0.0"
+  }
+}
