@@ -2,6 +2,7 @@ import React from 'react';
 import { useProduct } from '../hooks/useProduct';
 
 export const ProductList: React.FC = () => {
+  console.log('ProductList');
   const { data: products, isLoading, error } = useProduct();
 
   if (isLoading) return <div>Loading...</div>;

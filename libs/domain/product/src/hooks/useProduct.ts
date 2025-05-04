@@ -8,7 +8,6 @@ interface Product {
 }
 
 const fetchProducts = async (): Promise<Product[]> => {
-  // This is a mock implementation. Replace with actual API call
   return [
     { id: 1, name: 'Product 1', price: 100, description: 'Description 1' },
     { id: 2, name: 'Product 2', price: 200, description: 'Description 2' },
