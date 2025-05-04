@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './wellness.module.scss';
 import HOME_IMAGE from '../../../public/wellness/main.jpg';
 import { SharedHeader } from '@poc/ui';
+import { WellnessTracker } from '@domain/wellness';
 
 const Wellness = () => {
   return (<main>
@@ -23,6 +24,7 @@ const Wellness = () => {
         </li>
       </ul>
     </nav>
+    <WellnessTracker />
     </div>
   </main>)
 }
