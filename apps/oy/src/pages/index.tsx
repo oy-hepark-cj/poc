@@ -19,14 +19,11 @@ export function Index() {
 const Home = () => {
   return (<main>
     <h1 style={{textAlign: 'center', fontSize: '2rem', fontWeight: 'bold'}}>oy home</h1>
-    <ul>
-      <li>apps/oy React: 19.0.0</li>
-      <li>apps/oy @tanstack/react-query: 5.0.0</li>
-    </ul>
     <div className={styles.container}>
       <Link className={styles.link} to="/wellness"><Image src={HOME_IMAGE} alt="wellness" width={400} height={296} /><br />웰니스 보기</Link>
       <Link className={styles.link} to="/product"><Image src={PRODUCT_IMAGE} alt="wellness" width={400} /><br/>상품 보기</Link>
     </div>
+    <span>QueryClientProvider 로 감싸야하기 때문에 oy app에서 리액트쿼리 필요함</span>
   </main>)
 }
 
